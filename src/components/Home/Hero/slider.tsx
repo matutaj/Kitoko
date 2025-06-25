@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { pricedeta } from "@/app/api/data";
+import { productData } from "@/app/api/data";
 import Image from "next/image";
 import { getImagePrefix } from "@/utils/utils";
 
@@ -40,7 +40,7 @@ const CardSlider = () => {
   return (
     <div className="lg:-mt-16 mt-16">
       <Slider {...settings}>
-        {pricedeta.map((item, index) => (
+        {productData.map((item, index) => (
           <div key={index} className="pr-6">
             <div className="px-5 py-6 bg-dark_grey bg-opacity-80 rounded-xl">
               <div className="flex items-center gap-5">
@@ -48,7 +48,7 @@ const CardSlider = () => {
                   className={`${item.background} ${item.padding} rounded-full`}
                 >
                   <Image
-                    src= {`${getImagePrefix()}${item.icon}`}
+                    src={`${getImagePrefix()}${item.icon}`}
                     alt="icon"
                     width={item.width}
                     height={item.height}

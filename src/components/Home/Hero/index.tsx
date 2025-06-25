@@ -67,13 +67,15 @@ const Hero = () => {
                 width={40}
                 height={40}
               />
-              <p className="text-white sm:text-28 text-18 mb-0">
-                Reserve <span className="text-primary">Agora</span>
+              <p className="text-white sm:text-25 text-16 mb-0">
+                Rápido. Simples. Bonito.{" "}
+                <span className="text-primary">É KITOKO</span>
               </p>
             </div>
-            <h1 className="font-medium lg:text-76 md:text-70 text-54 lg:text-start text-center text-white mb-10">
-              Buy and Sell <span className="text-primary">Crypto</span> of your{" "}
-              <span className="text-primary">choice</span>!
+            <h1 className="font-medium lg:text-40 md:text-70 text-44 lg:text-start text-center text-white mb-10">
+              Encontra salões, barbearias e produtos{" "}
+              <span className="text-primary">de beleza</span> próximos com{" "}
+              <span className="text-primary">poucos cliques</span>!
             </h1>
             <div className="flex items-center md:justify-start justify-center gap-8">
               <button
@@ -89,40 +91,23 @@ const Hero = () => {
                 Comprar Produto
               </button>
             </div>
-            <div className="flex items-center md:justify-start justify-center gap-12 mt-20">
-              <Link href="#" className="hover:scale-110 duration-300">
-                <Image
-                  src={`${getImagePrefix()}images/hero/playstore.png`}
-                  alt="Play Store"
-                  width={240}
-                  height={70}
-                />
-              </Link>
-              <Link href="#" className="hover:scale-110 duration-300">
-                <Image
-                  src={`${getImagePrefix()}images/hero/applestore.png`}
-                  alt="App Store"
-                  width={240}
-                  height={70}
-                />
-              </Link>
-            </div>
           </motion.div>
           <motion.div
             {...rightAnimation}
             className="col-span-7 lg:block hidden"
           >
-            <div className="ml-20 -mr-64">
+            <div className="ml-20 -mr-24 ">
               <Image
                 src={`${getImagePrefix()}images/logo/BG-KITOKO-BG.png`}
                 alt="Banner"
-                width={1150}
-                height={1150}
+                width={1000}
+                height={1000}
                 quality={100}
               />
             </div>
           </motion.div>
         </div>
+
         <CardSlider />
       </div>
       <div className="absolute w-50 h-50 bg-gradient-to-bl from-tealGreen from-50% to-charcoalGray to-60% blur-400 rounded-full -top-64 -right-14 -z-1"></div>
