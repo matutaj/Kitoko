@@ -44,7 +44,7 @@ const Work = () => {
             className="lg:col-span-7 col-span-12"
           >
             <p className="sm:text-28 text-18 text-white">
-              Work with <span className="text-primary">us</span>
+              Trabalhe <span className="text-primary">Connosco</span>
             </p>
             <h2 className="sm:text-40 text-30 text-white lg:w-full md:w-70% font-medium">
               Successfully launch your blockchain project.
@@ -54,7 +54,7 @@ const Work = () => {
                 <div key={index} className="flex items-center gap-5">
                   <div className="px-5 py-5 bg-light_grey bg-opacity-30 rounded-full">
                     <Image
-                      src= {`${getImagePrefix()}${service.icon}`}
+                      src={`${getImagePrefix()}${service.icon}`}
                       alt={`${service.text} icon`}
                       width={40}
                       height={40}
@@ -68,7 +68,7 @@ const Work = () => {
           <motion.div {...TopAnimation} className="lg:col-span-5 col-span-12">
             <div className="2xl:-mr-40 mt-9 flex justify-center">
               <Image
-                src= {`${getImagePrefix()}images/work/img-work-with-us.png`}
+                src={`${getImagePrefix()}images/work/img-work-with-us.png`}
                 alt="image"
                 width={600}
                 height={425}
