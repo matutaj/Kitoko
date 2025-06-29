@@ -44,14 +44,13 @@ const CardSlider = () => {
           <div key={index} className="pr-6">
             <div className="px-5 py-6 bg-dark_grey bg-opacity-80 rounded-xl">
               <div className="flex items-center gap-5">
-                <div
-                  className={`${item.background} ${item.padding} rounded-full`}
-                >
+                <div className={`rounded-full`}>
                   <Image
                     src={`${getImagePrefix()}${item.icon}`}
                     alt="icon"
                     width={item.width}
                     height={item.height}
+                    className="rounded-full "
                   />
                 </div>
                 <p className="text-white text-xs font-normal ">
